@@ -90,7 +90,7 @@ body::before {
 
 body::after {
   top: 50%;
-  background-color: #71495b;
+  background-color: white;
 }
 
 header {
@@ -112,12 +112,12 @@ header h1 {
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  width: 90%;
+  width: 700px;
   max-width: 1170px;
   text-align: center;
   color :rgba(0,0,0,0.8);
   font-family: "medium-content-sans-serif-font","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
-  font-size: 4em;
+  font-size: 30px;
   font-weight: 700;
   font-style: normal;
   line-height: 1.15;
@@ -187,23 +187,25 @@ header h1 {
 @media only screen and (min-width: 1170px) {
   .cd-service {
     min-height: 525px;
-    margin-left: 420px;
-    padding: 6em 2em;
+    margin-left: 205px;
+    padding-left: 2em;
   }
   .cd-service::before, .cd-service::after {
-    width: 420px;
+    width: 208px;
   }
   .cd-service::before {
-    height: 325px;
+    height: 163px;
   }
   .cd-service::after {
-    top: 325px;
+    top: 162px;
     background-image: url("../img/cd-pattern-large.svg");
+    
   }
-  .cd-service.cd-service-divider:first-child, .cd-service.cd-service-divider:last-child {
+  /*.cd-service.cd-service-divider:first-child, .cd-service.cd-service-divider:last-child {
     min-height: 50px;
     padding: 0;
-  }
+  }*/
+  
   .cd-service.cd-service-divider:last-child {
     display: block;
   }
@@ -247,6 +249,6 @@ header h1 {
 footer {
   position: relative;
   height: 50%;
-  background: #3e253c;
+  background: grey;
   z-index: 2;
 }
