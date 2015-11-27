@@ -183,10 +183,12 @@ header h1 {
   font-size: 21px;
   line-height: 1.58;
   letter-spacing: -0.003em;
+  text-align: justify;
+  margin-right: 200px;
 }
 @media only screen and (min-width: 1170px) {
   .cd-service {
-    min-height: 525px;
+    /*min-height: 525px;*/
     margin-left: 205px;
     padding-left: 2em;
   }
@@ -249,6 +251,6 @@ header h1 {
 footer {
   position: relative;
   height: 50%;
-  background: grey;
+  background: #250671;
   z-index: 2;
 }
