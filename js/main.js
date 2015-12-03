@@ -35,3 +35,11 @@ function bodyBackground(itemsTopValues) {
 		}
 	});
 }
+
+$("button").click(function() {
+   
+   $('html,body').animate({
+       scrollTop: $(".cd-container").offset().top}, 
+       speed = 750);
+    return false;
+});

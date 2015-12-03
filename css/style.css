@@ -62,6 +62,8 @@ html, body {
     background-color: #699ec0;
   }
 }
+
+
 body::before, body::after {
   /* the 2 underneath colored sections */
   content: '';
@@ -70,7 +72,7 @@ body::before, body::after {
   width: 89.8%;
   max-width: 1170px;
   left: 50%;
-  right: auto;
+  right: 50%; /*initialement right: auto;*/
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -79,6 +81,7 @@ body::before, body::after {
   height: 50%;
   z-index: -1;
 }
+
 
 body::before {
   top: 0;
@@ -93,15 +96,116 @@ body::after {
   background-color: white;
 }
 
+
+/* Header + logo/button + animation wobble vertical*/
+
 header {
   position: relative;
-  height: 50%;
+  height: 100%;
+  display: block;
   /*background-color: #3e253c;*/
-  background-color: white;
+  /*background-image: url("../img/bookhouselogo.svg");
+  background-size: 15%;
+  background-repeat: no-repeat;
+  background-position: center;*/
+  background-color: #250670;
 
   z-index: 2;
 }
-header h1 {
+
+
+#logobook{
+    display: block;
+    margin: auto;
+    width: 70%;
+    padding-top: 30%;
+   
+}
+button {
+  background-color: #250670;
+  border: none;
+}
+
+@-webkit-keyframes #logobook {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+#logobook:hover, #logobook:focus, #logobook:active {
+  -webkit-animation-name: hvr-wobble-vertical;
+  animation-name: hvr-wobble-vertical;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+/* FIN - Header + logo/button + animation wobble vertical - FIN */
+
+
+
+
+.cd-service.cd-service-divider h1 {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -138,9 +242,10 @@ header h1 {
   content: '';
   position: absolute;
   width: 56px;
-  right: 100%;
+ 
   z-index: 2;
 }
+
 .cd-service::before {
   top: 0;
   height: 50px;
@@ -150,6 +255,7 @@ header h1 {
   top: 50px;
   bottom: 0;
   background-image: url("../img/cd-pattern-small.svg");
+  right: 100%;
   background-repeat: repeat-y;
 }
 .cd-service.cd-service-divider::after {
@@ -160,16 +266,24 @@ header h1 {
 }
 .cd-service.cd-service-1::before {
   background-image: url("../img/cd-icon-1-small.svg");
+   right: 100%;
 }
 .cd-service.cd-service-2::before {
   background-image: url("../img/cd-icon-2-small.svg");
+   right: 100%;
 }
 .cd-service.cd-service-3::before {
   background-image: url("../img/cd-icon-3-small.svg");
+   right: 100%;
 }
 .cd-service.cd-service-4::before {
   background-image: url("../img/cd-icon-4-small.svg");
+   right: 100%;
 }
+
+
+
+
 .cd-service h2 {
   text-transform: uppercase;
   color: white;
@@ -183,12 +297,37 @@ header h1 {
   font-size: 21px;
   line-height: 1.58;
   letter-spacing: -0.003em;
+  width: 100%;
+  padding-left: 2%;
 }
+
+
+@media only screen and (min-width: 700px) {
+
+  #logobook{
+    display: block;
+    margin: auto;
+    width: 55%;
+    padding: 8%;
+   
+}
+}
+
 @media only screen and (min-width: 1170px) {
+
+  #logobook{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 4%;
+   
+}
   .cd-service {
     min-height: 525px;
     margin-left: 205px;
+    margin-right: 205px;
     padding-left: 2em;
+    padding-right: 2em;
   }
   .cd-service::before, .cd-service::after {
     width: 208px;
@@ -197,9 +336,7 @@ header h1 {
     height: 163px;
   }
   .cd-service::after {
-    top: 162px;
-    background-image: url("../img/cd-pattern-large.svg");
-    
+    top: 162px;    
   }
   /*.cd-service.cd-service-divider:first-child, .cd-service.cd-service-divider:last-child {
     min-height: 50px;
@@ -209,18 +346,49 @@ header h1 {
   .cd-service.cd-service-divider:last-child {
     display: block;
   }
+
+
+  .cd-service.cd-service-divider::after {
+    background: url("../img/cd-pattern-large.svg"),
+    url("../img/cd-pattern-large-full.sv");
+  }
+
   .cd-service.cd-service-1::before {
     background-image: url("../img/cd-icon-1-large.svg");
+    right: 100%
   }
+  .cd-service.cd-service-1::after {
+    background-image: url("../img/cd-pattern-large.svg");
+    right: 100%;
+  }
+
   .cd-service.cd-service-2::before {
     background-image: url("../img/cd-icon-2-large.svg");
+    left: 99.9%;
   }
+    .cd-service.cd-service-2::after {
+    background-image: url("../img/cd-pattern-large.svg");
+    left: 99.9%;
+  }
+
   .cd-service.cd-service-3::before {
     background-image: url("../img/cd-icon-3-large.svg");
   }
+   .cd-service.cd-service-3::after {
+    background-image: url("../img/cd-pattern-large.svg");
+    right: 100%;
+  }
+
   .cd-service.cd-service-4::before {
     background-image: url("../img/cd-icon-4-large.svg");
+    left: 99.9%;
   }
+    .cd-service.cd-service-4::after {
+    background-image: url("../img/cd-pattern-large.svg");
+    left: 99.9%;
+  }
+
+
   .cd-service h2, .cd-service p {
     color: rgba(0,0,0,0);
     -webkit-transition: color, 0.5s;
@@ -245,6 +413,8 @@ header h1 {
     color: rgba(0,0,0,0.7);
   }
 }
+
+
 
 footer {
   position: relative;
