@@ -300,8 +300,13 @@ button {
   line-height: 1.58;
   letter-spacing: -0.003em;
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 100%;
   padding-left: 2%;
+=======
+  text-align: justify;
+  margin-right: 200px;
+>>>>>>> origin/master
 =======
   text-align: justify;
   margin-right: 200px;
