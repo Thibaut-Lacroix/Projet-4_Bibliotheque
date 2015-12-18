@@ -128,11 +128,6 @@ html, body {
   body.new-color-26::before {
     background-color:#f46416;
   }
-<<<<<<< HEAD
-=======
-
-}
->>>>>>> origin/master
 
 
 body::before, body::after {
@@ -380,18 +375,8 @@ button {
   font-size: 21px;
   line-height: 1.58;
   letter-spacing: -0.003em;
-<<<<<<< HEAD
-<<<<<<< HEAD
   width: 100%;
   padding-left: 2%;
-=======
-  text-align: justify;
-  margin-right: 200px;
->>>>>>> origin/master
-=======
-  text-align: justify;
-  margin-right: 200px;
->>>>>>> origin/master
 }
 
 
@@ -415,7 +400,7 @@ button {
     padding-top: 4%;
 }
   .cd-service {
-    /*min-height: 525px;*/
+    min-height: 525px;
     margin-left: 205px;
     margin-right: 205px;
     padding-left: 2em;
@@ -445,11 +430,7 @@ button {
     background-color: rgba(255,255,255,0);
   }
   .bween-cd-service.focus {
-<<<<<<< HEAD
     background-image: url("../img/cd-pattern-large-horizontal.svg");
-=======
-     background-image: url("../img/cd-pattern-large-horizontal.svg");
->>>>>>> origin/master
     background-repeat: repeat-x;
     position: relative;
     display: block;
@@ -541,7 +522,6 @@ button {
 /* Icones sur les cotés*/
 /*DROITE*/
   .cd-service.cd-service-2::before {
-<<<<<<< HEAD
     background-image: url("../img/2.svg");
     left: 99.7%;
   }
@@ -659,124 +639,6 @@ button {
   .cd-service-20,.cd-service-21,.cd-service-22,.cd-service-25,.cd-service-26{
     margin-right: 0;
   }
-=======
-    background-image: url("../img/cd-icon-2-large.svg");
-    left: 99.7%;
-  }
-  .cd-service.cd-service-3::before {
-    background-image: url("../img/cd-icon-3-large.svg");
-    left: 99.7%;
-  }
-  .cd-service.cd-service-4::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    left: 99.7%;
-  }
-   .cd-service.cd-service-8::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    left: 99.7%;
-  }
-   .cd-service.cd-service-9::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    left: 99.7%;
-  }
-   .cd-service.cd-service-13::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    left: 99.7%;
-  }
-   .cd-service.cd-service-14::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    left: 99.7%;
-  }
-   .cd-service.cd-service-15::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    left: 99.7%;
-  }
-   .cd-service.cd-service-18::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    left: 99.7%;
-  }
-   .cd-service.cd-service-19::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    left: 99.7%;
-  }
-   .cd-service.cd-service-23::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    left: 99.7%;
-  }
-   .cd-service.cd-service-24::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    left: 99.7%;
-  }
-  .cd-service-2,.cd-service-3, .cd-service-4, .cd-service-8, .cd-service-9,.cd-service-13,.cd-service-14,.cd-service-15,.cd-service-18,
-  .cd-service-19,.cd-service-23,.cd-service-24 {
-    margin-left: 0;
-  }
-  .cd-service-2 p, .cd-service-3 p, .cd-service-4 p, .cd-service-8 p, .cd-service-9 p,.cd-service-13 p,.cd-service-14 p,.cd-service-15 p,
-  .cd-service-18 p,.cd-service-19 p,.cd-service-23 p,.cd-service-24 p {
-    padding-left: 205px;
-  }
-
-  /*GAUCHE*/
-  .cd-service.cd-service-1::before {
-    background-image: url("../img/cd-icon-1-large.svg");
-  }
-  .cd-service.cd-service-5::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    right:100%;
-    }
-  .cd-service.cd-service-6::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    right:100%;
-    }
-  .cd-service.cd-service-7::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    right:100%;
-    }
-  .cd-service.cd-service-10::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    right:100%;
-    }
-  .cd-service.cd-service-11::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    right:100%;
-    }
-  .cd-service.cd-service-12::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    right:100%;
-    }
-  .cd-service.cd-service-16::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    right:100%;
-    }
-  .cd-service.cd-service-17::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    right:100%;
-    }
-  .cd-service.cd-service-20::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    right:100%;
-    }
-  .cd-service.cd-service-21::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    right:100%;
-    }
-  .cd-service.cd-service-22::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    right:100%;
-    }
-  .cd-service.cd-service-25::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    right:100%;
-    }
-  .cd-service.cd-service-26::before {
-    background-image: url("../img/cd-icon-4-large.svg");
-    right:100%;
-    }
-  .cd-service.cd-service-divider,.cd-service-1, .cd-service-5, .cd-service-6, .cd-service-7, .cd-service-10,.cd-service-11,.cd-service-12,.cd-service-16,.cd-service-17,
-  .cd-service-20,.cd-service-21,.cd-service-22,.cd-service-25,.cd-service-26{
-    margin-right: 0;
-  }
->>>>>>> origin/master
   .cd-service.cd-service-divider h1,.cd-service-1 p, .cd-service-5 p, .cd-service-6 p, .cd-service-7 p,.cd-service-10 p,.cd-service-11 p,.cd-service-12 p,.cd-service-16 p,
   .cd-service-17 p ,.cd-service-20 p ,.cd-service-21 p ,.cd-service-22 p ,.cd-service-25 p ,.cd-service-26 p {
     padding-right: 205px;
@@ -821,13 +683,8 @@ button {
 
 footer {
   position: relative;
-<<<<<<< HEAD
   height: 7.5%;
   background: #250670;
-=======
-  height: 50%;
-  background: #250671;
->>>>>>> origin/master
   z-index: 2;
 }
 
